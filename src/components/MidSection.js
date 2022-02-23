@@ -5,41 +5,30 @@ import {
     Text,
     IconButton,
     Button,
-    Link,
     Spacer,
     Box,
     Image,
     Input,
-    InputGroup,
-    InputRightElement,
     Table,
-  Thead,
-  Tbody,
-  Tfoot,
-  Tr,
-  Th,
-  Td,
-  TableCaption
 } from '@chakra-ui/react';
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 
 import {FiExternalLink} from 'react-icons/fi';
-import {BsArrowLeft, BsBoxArrowUpRight} from 'react-icons/bs';
+import { BsBoxArrowUpRight} from 'react-icons/bs';
 
 export default function MidSection () {
     const [info, setInfo] = useState([]);
     
     useEffect(() => {
-        const res = axios.get('https://raw.githubusercontent.com/akshita151199/APIs/main/data') .then(function (response) {
+        axios.get('https://raw.githubusercontent.com/akshita151199/APIs/main/data').then(function (response) {
             setInfo(response.data.data);
-            console.log(info);
+            
           })
           .catch(function (error) {
             // handle error
             console.log(error);
           });
         
-    }, []);
+    },[]);
 
     return(
        

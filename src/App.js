@@ -1,18 +1,12 @@
-import React, { Component }  from 'react';
-import { IconButton } from "@chakra-ui/button";
+import React from 'react';
 import { SimpleGrid } from "@chakra-ui/layout";
 import { GridItem } from "@chakra-ui/layout";
 import { Box } from "@chakra-ui/layout";
-import { FiPlus } from "react-icons/fi";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import LastSection from "./components/LastSection";
 import MidSection from "./components/MidSection";
-import {
-  AiOutlineArrowLeft
-} from '@chakra-ui/react';
 import { ChakraProvider } from '@chakra-ui/react';
-
 import  './App.css';
 
 function App() {

@@ -1,23 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React  from 'react';
+
 import {
     Flex,
-    Text,
     IconButton,
     Button,
-    Link,
-    Spacer,
     Box,
     Image,
     Input,
-    
     Select,
-    
-    
 } from '@chakra-ui/react';
 
 
-import {BsMouse, BsArrowLeft, BsBoxArrowInRight} from 'react-icons/bs';
+import {BsArrowLeft, BsBoxArrowInRight} from 'react-icons/bs';
 import {FiExternalLink} from 'react-icons/fi'
 
 
@@ -45,7 +39,7 @@ export default function LastSection () {
                             color='whiteAlpha.900'
                             _hover={{ background: 'none' }}     
                         />
-                    <a className='last-link'>Custom Link</a>
+                    <a href='#!' className='last-link'>Custom Link</a>
                 </Box>
                
                     
@@ -54,7 +48,7 @@ export default function LastSection () {
             </Flex>
             <Flex mt='4'>
             <Box>
-                <a className='lastlink2'>https://testnet.xyz.xyz/trade?ref=
+                <a href='#!' className='lastlink2'>https://testnet.xyz.xyz/trade?ref=
 </a>
             </Box>
             </Flex>

@@ -32,8 +32,8 @@ export default function Sidebar() {
             left="5"
             marginTop="2.5vh"
             boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.05)"
-            borderRadius={navSize == "small" ? "1px" : "1px"}
-            w={navSize == "small" ? "75px" : "200px"}
+            borderRadius={navSize === "small" ? "1px" : "1px"}
+            w={navSize === "small" ? "75px" : "200px"}
             flexDir="column"
             justifyContent="space-between"
             borderRight='1px' borderColor='gray.700'
@@ -42,7 +42,7 @@ export default function Sidebar() {
                 p="5%"
                 flexDir="column"
                 w="100%"
-                alignItems={navSize == "small" ? "center" : "flex-start"}
+                alignItems={navSize === "small" ? "center" : "flex-start"}
                 as="nav"
             >
               <Flex FlexDir='row'>
@@ -55,7 +55,7 @@ export default function Sidebar() {
                     _hover={{ background: 'none' }}
                     icon={<BsArrowLeft  color='white'/>}
                     onClick={() => {
-                        if (navSize == "small")
+                        if (navSize === "small")
                             changeNavSize("large")
                         else
                             changeNavSize("small")
@@ -81,11 +81,11 @@ export default function Sidebar() {
                
                 flexDir="column"
                 w="100%"
-                alignItems={navSize == "small" ? "center" : "flex-start"}
+                alignItems={navSize === "small" ? "center" : "flex-start"}
                 mb={4}
             >
                <Flex mt={9} align="center">
-                <Flex flexDir="row" display={navSize == "small" ? "none" : "flex"}>
+                <Flex flexDir="row" display={navSize === "small" ? "none" : "flex"}>
                     
                         <Button leftIcon={<CircleIcon/>} size='sm' bg='#353945' variant='solid' className='footer-btn'>
                           <Text color='white'>$0.90</Text>

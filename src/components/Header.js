@@ -1,11 +1,8 @@
-import { Avatar } from "@chakra-ui/avatar";
-import { Image } from "@chakra-ui/image";
-import { Spacer } from "@chakra-ui/layout";
-import { HStack } from "@chakra-ui/layout";
+import React from 'react';
 import { Flex } from "@chakra-ui/layout";
 import { Box } from "@chakra-ui/layout";
-import { FiBell, FiSearch, FiSettings } from "react-icons/fi";
-import React from 'react';
+
+
 
 export default function Header () {
   return (
